@@ -8,7 +8,7 @@
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body class="page">
+<body class="page__body">
   <header class="page-header">
     <a href="index.html" class="page-header__wrapper">
       <img src="./img/mobile/logo-header1.svg" alt="cat-energy">
@@ -46,13 +46,13 @@
             <li class="main-form__item">
               <p class="main-form__name">
                 <label class="main-form__nickname" for="name">ИМЯ:*</label>
-                <input class="main-form__name-input" type="text" id="name">
+                <input class="main-form__name-input" type="text" id="name" required>
               </p>
             </li>
             <li class="main-form__item">
               <p class="main-form__weight">
                 <label class="main-form__weight-cat" for="weight">Вес (кг):*</label>
-                <input class="main-form__weight-input" type="text" id="weight">
+                <input class="main-form__weight-input" type="text" id="weight" required>
               </p>
             </li>
             <li class="main-form__item">
@@ -68,7 +68,7 @@
           <ul class="objective__list">
             <li class="objective__item">
               <p class="objective__slim">
-                <input class="objective__slim-input" type="radio" id="slim" name="type-objective">
+                <input class="objective__slim-input" type="radio" id="slim" name="type-objective" checked>
                 <label class="objective__slim-text" for="slim">похудение</label>
               </p>
             </li>
@@ -93,13 +93,13 @@
             <li class="information__item">
               <p class="information__email">
                 <label class="information__email-name" for="mail">E-mail:*</label>
-                <input class="information__email-input" type="text" id="mail" placeholder="kuklachev@gmail.com">
+                <input class="information__email-input" type="email" id="mail" placeholder="kuklachev@gmail.com" required>
               </p>
             </li>
             <li class="information__item">
               <p class="information__phone">
                 <label class="information__phone-name" for="phone">Телефон:*</label>
-                <input class="information__phone-input" type="text" id="phone" placeholder="8 (960) 900-60-90">
+                <input class="information__phone-input" type="tel" id="phone" placeholder="8 (960) 900-60-90">
               </p>
             </li>
           </ul>
@@ -107,7 +107,7 @@
         <fieldset class="comments">
           <legend class="comments__title">Комментарий</legend>
           <p class="comments__item">
-            <input class="comments__input" type="text" placeholder="Расскажите обо всех повадках кота">
+            <textarea class="comments__input" type="text" placeholder="Расскажите обо всех повадках кота"></textarea>
           </p>
         </fieldset>
         <fieldset class="optionally">
@@ -115,7 +115,7 @@
           <ul class="optionally__list">
             <li class="optionally__item">
               <p class="optionally__unit">
-                <input class="optionally__input" type="checkbox" id="sweet">
+                <input class="optionally__input" type="checkbox" id="sweet" checked>
                 <label class="optionally__title-label" for="sweet">сахарозаменитель</label>
               </p>
             </li>
@@ -138,7 +138,7 @@
               </p>
             </li>
           </ul>
-          <button class="optionally__button" type="button">отправить заявку</button>
+          <button class="optionally__button" type="submit">отправить заявку</button>
           <p class="optionally__text">* — Обязательные поля</p>
         </fieldset>
       </form>
