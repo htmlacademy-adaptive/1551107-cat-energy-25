@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -19,14 +20,14 @@
       </button>
       <div class="main-wrapper">
         <ul class="main-wrapper__list">
-          <li class="main-wrapper__item main-wrapper__item--current">
+          <li class="main-wrapper__item">
             <a class="main-wrapper__link" href="./index.html">главная</a>
           </li>
           <li class="main-wrapper__item">
             <a class="main-wrapper__link" href="./catalog.html">каталог продукции</a>
           </li>
           <li class="main-wrapper__item">
-            <a class="main-wrapper__link" href="./form.html">подбор программы</a>
+            <a class="main-wrapper__link main-wrapper__link--current" href="./form.html">подбор программы</a>
           </li>
         </ul>
       </div>
@@ -45,19 +46,19 @@
           <ul class="main-form__list">
             <li class="main-form__item">
               <p class="main-form__name">
-                <label class="main-form__nickname" for="name">ИМЯ:*</label>
+                <label class="main-form__type" for="name">ИМЯ:*</label>
                 <input class="main-form__name-input" type="text" id="name" required>
               </p>
             </li>
             <li class="main-form__item">
               <p class="main-form__weight">
-                <label class="main-form__weight-cat" for="weight">Вес (кг):*</label>
+                <label class="main-form__type" for="weight">Вес (кг):*</label>
                 <input class="main-form__weight-input" type="text" id="weight" required>
               </p>
             </li>
             <li class="main-form__item">
               <p class="main-form__age">
-                <label class="main-form__cat-age" for="age">Возраст (лет):</label>
+                <label class="main-form__type" for="age">Возраст (лет):</label>
                 <input class="main-form__name-input" type="text" id="age">
               </p>
             </li>
@@ -92,14 +93,14 @@
           <ul class="information__list">
             <li class="information__item">
               <p class="information__email">
-                <label class="information__email-name" for="mail">E-mail:*</label>
-                <input class="information__email-input" type="email" id="mail" placeholder="kuklachev@gmail.com" required>
+                <label class="information__type" for="mail">E-mail:*</label>
+                <input class="information__input" type="email" id="mail" placeholder="kuklachev@gmail.com" required>
               </p>
             </li>
             <li class="information__item">
               <p class="information__phone">
-                <label class="information__phone-name" for="phone">Телефон:*</label>
-                <input class="information__phone-input" type="tel" id="phone" placeholder="8 (960) 900-60-90">
+                <label class="information__type" for="phone">Телефон:*</label>
+                <input class="information__input" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
               </p>
             </li>
           </ul>
@@ -107,7 +108,7 @@
         <fieldset class="comments">
           <legend class="comments__title">Комментарий</legend>
           <p class="comments__item">
-            <textarea class="comments__input" type="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="comments__input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </p>
         </fieldset>
         <fieldset class="optionally">
@@ -126,7 +127,7 @@
               </p>
             </li>
             <li class="optionally__item">
-              <p class="optionally__init">
+              <p class="optionally__unit">
                 <input class="optionally__input" type="checkbox" id="milk">
                 <label class="optionally__title-label" for="milk">молоко</label>
               </p>
@@ -143,7 +144,7 @@
         </fieldset>
       </form>
     </section>
-    <section class="address">
+    <section class="address address--color">
       <div class="address__wrapper">
         <div class="address__correct">
           <p class="address__invite">приглашаем к сотрудничеству дилеров!</p>
@@ -181,8 +182,8 @@
         </svg>
       </div>
       <div class="main-footer__academy">
-        <a class="main-footer__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="main-footer__item" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="main-footer__text">HTML Academy</span>
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
