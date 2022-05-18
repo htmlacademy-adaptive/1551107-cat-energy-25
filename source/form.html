@@ -10,83 +10,89 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <a href="index.html" class="page-header__wrapper">
-      <img src="./img/mobile/logo-header1.svg" alt="cat-energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">открыть меню</span>
-      </button>
-      <div class="main-wrapper">
-        <ul class="main-wrapper__list">
-          <li class="main-wrapper__item">
-            <a class="main-wrapper__link" href="./index.html">главная</a>
-          </li>
-          <li class="main-wrapper__item">
-            <a class="main-wrapper__link" href="./catalog.html">каталог продукции</a>
-          </li>
-          <li class="main-wrapper__item">
-            <a class="main-wrapper__link main-wrapper__link--current" href="./form.html">подбор программы</a>
+  <header class="page-header-inner">
+    <div class="page-header__nav-wrapper">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+            <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__logo-image" src="./img/mobile/logo-header1.svg" alt="cat-energy">
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--off" type="button">
+          <span class="visually-hidden">открыть меню</span>
+           </button>
+         </div>
+
+          <ul class="main-wrapper__list">
+           <li class="main-wrapper__item">
+              <a class="main-wrapper__link-inner" href="./index.html">главная</a>
+           </li>
+           <li class="main-wrapper__item">
+             <a class="main-wrapper__link-inner" href="./catalog.html">каталог продукции</a>
+            </li>
+            <li class="main-wrapper__item">
+             <a class="main-wrapper__link-inner main-wrapper__link--current" href="./form.html">подбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main class="form">
     <section class="hero-form">
       <div class="hero-form__wrapper">
         <h1 class="hero-form__name">Подбор программы</h1>
-        <p class="hero-form__text">Заполните анкету, и мы подберем
+        <p class="hero-form__text">Заполните анкету, и мы подберем<br>
           программу питания для вашего кота</p>
       </div>
       <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="main-form__wrapper">
-          <legend class="main-form__title visually-hidden">Характеристики</legend>
-          <ul class="main-form__list">
-            <li class="main-form__item">
-              <p class="main-form__name">
-                <label class="main-form__type" for="name">ИМЯ:*</label>
-                <input class="main-form__name-input" type="text" id="name" required>
-              </p>
-            </li>
-            <li class="main-form__item">
-              <p class="main-form__weight">
-                <label class="main-form__type" for="weight">Вес (кг):*</label>
-                <input class="main-form__weight-input" type="text" id="weight" required>
-              </p>
-            </li>
-            <li class="main-form__item">
-              <p class="main-form__age">
-                <label class="main-form__type" for="age">Возраст (лет):</label>
-                <input class="main-form__name-input" type="text" id="age">
-              </p>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="objective">
-          <legend class="objective__title visually-hidden">цель</legend>
-          <ul class="objective__list">
-            <li class="objective__item">
-              <p class="objective__slim">
-                <input class="objective__slim-input" type="radio" id="slim" name="type-objective" checked>
-                <label class="objective__slim-text" for="slim">похудение</label>
-              </p>
-            </li>
-            <li class="objective__item">
-              <p class="objective__slim">
-                <input class="objective__slim-input" type="radio" id="mass" name="type-objective">
-                <label class="objective__slim-text" for="mass">Набор массы</label>
-              </p>
-            </li>
-            <li class="objective__item">
-              <p class="objective__slim">
-                <input class="objective__slim-input" type="radio" id="advice" name="type-objective">
-                <label class="objective__slim-text" for="advice">Не знаю (Нужен ваш совет)</label>
-              </p>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="main-form__wrapper-desktop">
+          <fieldset class="main-form__wrapper">
+            <legend class="main-form__title visually-hidden">Характеристики</legend>
+            <ul class="main-form__list">
+              <li class="main-form__item">
+                <p class="main-form__name">
+                  <label class="main-form__type" for="name">ИМЯ:*</label>
+                  <input class="main-form__input" type="text" id="name" placeholder="барсик" required>
+                </p>
+              </li>
+              <li class="main-form__item">
+                <p class="main-form__weight">
+                  <label class="main-form__type" for="weight">Вес (кг):*</label>
+                  <input class="main-form__input" type="text" id="weight" placeholder="7" required>
+                </p>
+              </li>
+              <li class="main-form__item">
+                <p class="main-form__age">
+                  <label class="main-form__type" for="age">Возраст (лет):</label>
+                  <input class="main-form__input" type="text" placeholder="7" id="age">
+                </p>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="objective">
+            <legend class="objective__title visually-hidden">цель</legend>
+            <ul class="objective__list">
+              <li class="objective__item">
+                <p class="objective__slim">
+                  <input class="objective__slim-input" type="radio" id="slim" name="type-objective" checked>
+                  <label class="objective__slim-text" for="slim">похудение</label>
+                </p>
+              </li>
+              <li class="objective__item">
+                <p class="objective__slim">
+                  <input class="objective__slim-input" type="radio" id="mass" name="type-objective">
+                  <label class="objective__slim-text" for="mass">Набор массы</label>
+                </p>
+              </li>
+              <li class="objective__item">
+                <p class="objective__slim">
+                  <input class="objective__slim-input" type="radio" id="advice" name="type-objective">
+                  <label class="objective__slim-text" for="advice">Не знаю (Нужен ваш совет)</label>
+                </p>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
         <fieldset class="information">
           <legend class="information__title">Контактные данные
             (владельца кота)</legend>
@@ -139,13 +145,15 @@
               </p>
             </li>
           </ul>
-          <button class="optionally__button" type="submit">отправить заявку</button>
+          <div class="optionally__wrapper">
+            <button class="optionally__button" type="submit">отправить заявку</button>
           <p class="optionally__text">* — Обязательные поля</p>
+          </div>
         </fieldset>
       </form>
     </section>
-    <section class="address address--color">
-      <div class="address__wrapper">
+    <section class="address">
+      <div class="address__wrapper address__wrapper--color">
         <div class="address__correct">
           <p class="address__invite">приглашаем к сотрудничеству дилеров!</p>
           <p class="address__place">ул. Большая

@@ -11,15 +11,37 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .information__list {
   padding: 0;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .information__item {
   list-style-type: none;
+
+  @media (min-width: @desktop-width) {
+    width: 569px;
+  }
+}
+
+.information__email,
+.information__phone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .information__type {
@@ -30,9 +52,16 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  white-space: nowrap;
+  margin-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.information__input-mail {
+.information__input {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -40,16 +69,13 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  padding: 14px 51px 15px 15px;
-}
+  width: 100%;
+  height: 45px;
+  padding-left: 15px;
+  border: 1px solid #e7e7e7;
 
-.information__input-phone {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
-  padding: 14px 68px 15px 16px;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

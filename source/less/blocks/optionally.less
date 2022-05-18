@@ -7,6 +7,16 @@
 .optionally__list {
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .optionally__item {
@@ -21,6 +31,17 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.optionally__input {
+  @media (min-width: @tablet-width) {
+    margin-right: 26px;
+  }
 }
 
 .optionally__title {
@@ -30,6 +51,11 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .optionally__button {
@@ -43,6 +69,16 @@
   text-transform: uppercase;
   color: #ffffff;
   border: none;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 282px;
+    padding: 16px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 569px;
+  }
 }
 
 .optionally__text {
@@ -52,4 +88,25 @@
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 135px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 81px;
+  }
+}
+
+.optionally__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+  }
 }
