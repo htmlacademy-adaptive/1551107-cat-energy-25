@@ -1,7 +1,65 @@
-.cat-food__wrapper {
-  background-color: #68b738d9;
-  background-image: url("../img/mobile/main-image.png");
+.cat-food {
+  position: relative;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  text-align: center;
+  background-image: url("../img/mobile/main-image.png"),
+    linear-gradient(180deg, #64a83b 62.4%, #ffffff 62.4%);
+  background-size: 320px 305px, 100%;
+  background-position: top center;
   background-repeat: no-repeat;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 8px;
+    padding-bottom: 529px;
+    color: #111111;
+    text-align: left;
+    background-image: none;
+    margin-left: 89px;
+    margin-right: 89px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 37px;
+    padding-bottom: 188px;
+  }
+}
+
+.cat-food__wrapper {
+  @media (min-width: @desktop-width) {
+    margin-right: auto;
+    width: 530px;
+  }
+}
+
+.cat-food__product {
+  display: block;
+  margin-top: 28px;
+  margin-bottom: 3px;
+  width: 280px;
+  height: 271px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+    bottom: auto;
+    transform: translateX(-29%);
+    width: 552px;
+    height: 499px;
+  }
 }
 
 .cat-food__name {
@@ -11,6 +69,22 @@
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 41px;
+  }
 }
 
 .cat-food__text {
@@ -21,17 +95,54 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    position: relative;
+    z-index: 5;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 5;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .cat-food__form-link {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
+  display: block;
+  box-sizing: border-box;
+  border: 0;
+  padding: 11px 10px;
+  font-size: 16px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
+  line-height: 20px;
   color: #ffffff;
-  background-color: #68b738;
+  text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
-  padding: 7px 44px;
+  cursor: pointer;
+  background-color: #68b738;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 5;
+    margin-top: 48px;
+    padding: 16px 10px;
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 53px;
+  }
 }

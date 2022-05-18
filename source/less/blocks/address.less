@@ -6,6 +6,34 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 172px;
+  }
+}
+
+.address__correct {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 628px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: 565px;
+    padding: 0;
+    background-color: #ffffff;
+    top: 95px;
+    left: 110px;
+  }
 }
 
 .address__place {
@@ -15,6 +43,11 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    width: 160px;
+  }
 }
 
 .address {
@@ -25,4 +58,23 @@
 
 .address__image {
   background-color: #f2f2f2;
+}
+
+.address__wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    padding-left: 110px;
+    padding-right: 110px;
+    width: 1440px;
+    padding-bottom: 50px;
+  }
 }

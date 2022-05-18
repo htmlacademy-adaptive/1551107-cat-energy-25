@@ -1,0 +1,54 @@
+.main-nav__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 13.5px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-nav__logo,
+.main-nav__logo-image {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 172px;
+    height: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 60px;
+  }
+}
+
+.main-nav__toggle {
+  position: relative;
+  display: none;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  color: #222222;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 54px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+  }
+}
