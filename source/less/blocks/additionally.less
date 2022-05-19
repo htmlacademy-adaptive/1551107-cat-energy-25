@@ -1,3 +1,53 @@
+.additionally__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 896px;
+    border: none;
+  }
+}
+
+.additionally-container {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    width: 1220px;
+    margin: 0 auto;
+    column-gap: 79px;
+  }
+}
+
+.additionally__name-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
 .additionally__name {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -5,45 +55,13 @@
   font-size: 24px;
   line-height: 24px;
   color: #000000;
-}
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 35px;
+  margin: 0;
 
-.additionally-product__title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #222222;
-}
-
-.additionally-product__unit {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  color: #444444;
-}
-
-.additionally-product__property__type {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  color: #444444;
-}
-
-.additionally-product__button {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: #68b738;
-  padding: 10px 109px;
-  border: none;
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    border-bottom: none;
+  }
 }
