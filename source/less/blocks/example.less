@@ -90,7 +90,10 @@
 .example__price-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;

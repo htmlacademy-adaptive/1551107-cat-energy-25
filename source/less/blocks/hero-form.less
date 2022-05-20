@@ -1,3 +1,43 @@
+.hero-form__wrapper {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 1300px;
+  }
+}
+
+.main-form {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 768px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 1300px;
+  }
+}
+
 .hero-form__name {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -5,6 +45,12 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  text-align: start;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .hero-form__text {
@@ -15,4 +61,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+  text-align: start;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
