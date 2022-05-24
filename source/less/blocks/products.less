@@ -65,10 +65,27 @@
 
 .products__wrapper:last-child {
   display: flex;
-  padding-top: 25px;
+  padding-top: 65px;
   padding-bottom: 23px;
   text-align: center;
   flex-direction: column;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 143px;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+    box-shadow: none;
+  }
 
   @media (min-width: @tablet-width) {
     grid-template-columns: none;
@@ -80,10 +97,23 @@
     background-image: none;
     height: 430px;
     align-self: flex-end;
+
+    &::before,
+    &::after {
+      top: 79px;
+      left: 128px;
+      width: 60px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
+
+    &::before,
+    &::after {
+      top: 79px;
+      left: 89px;
+    }
   }
 }
 
