@@ -11,8 +11,8 @@
 
 <body class="page__body">
   <header class="page-header-inner">
-    <div class="page-header__nav-wrapper">
-      <nav class="main-nav">
+    <div class="page-header-inner__nav-wrapper">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
             <img class="main-nav__logo-image" src="./img/mobile/logo-header1.svg" alt="cat-energy">
@@ -30,7 +30,7 @@
               <a class="main-wrapper__link-inner" href="./catalog.html">каталог продукции</a>
             </li>
             <li class="main-wrapper__item">
-              <a class="main-wrapper__link-inner main-wrapper__link--current" href="./form.html">подбор программы</a>
+              <a class="main-wrapper__link-inner main-wrapper__link-inner--current" href="./form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -99,13 +99,13 @@
             (владельца кота)</legend>
           <ul class="information__list">
             <li class="information__item">
-              <p class="information__email">
+              <p class="information__email information__email--icon">
                 <label class="information__type" for="mail">E-mail:*</label>
                 <input class="information__input" type="email" id="mail" placeholder="kuklachev@gmail.com" required>
               </p>
             </li>
             <li class="information__item">
-              <p class="information__phone">
+              <p class="information__phone information__phone--icon">
                 <label class="information__type" for="phone">Телефон:*</label>
                 <input class="information__input" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
               </p>
@@ -161,7 +161,10 @@
             Конюшенная, д. 19/8
             Санкт-Петербург</p>
         </div>
-        <img src="./img/mobile/location.png" alt="карта" width="320" height="362">
+        <iframe class="address__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1751.9874010813674!2d30.321061269018625!3d59.93872347961793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1653285761567!5m2!1sru!2sru"
+         style="border: 0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
@@ -203,6 +206,7 @@
 
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

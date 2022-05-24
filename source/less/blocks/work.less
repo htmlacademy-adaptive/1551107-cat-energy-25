@@ -33,8 +33,108 @@
 }
 
 .work__item {
+  position: relative;
+
   @media (min-width: @tablet-width) {
-    width: 230px;
+    &--one {
+      background-image: url("../img/tablet/number1.png");
+      background-repeat: no-repeat;
+      background-position: 71% 109%;
+    }
+
+    &--two {
+      background-image: url("../img/tablet/number2.png");
+      background-repeat: no-repeat;
+      background-position: 90% 109%;
+    }
+
+    &--three {
+      background-image: url("../img/tablet/number3.png");
+      background-repeat: no-repeat;
+      background-position: 91% 109%;
+    }
+
+    &--four {
+      background-image: url("../img/tablet/number4.png");
+      background-repeat: no-repeat;
+      background-position: 96% 109%;
+    }
+  }
+
+  &--leaf::before {
+    content: " ";
+    position: absolute;
+    background-image: url("../../img/mobile/icon-leaf.png");
+    width: 60px;
+    height: 60px;
+    transform: translateX(-86px);
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      transform: translate(0, -94px);
+    }
+  }
+
+  &--water::before {
+    content: " ";
+    position: absolute;
+    background-image: url("../../img/mobile/icon-water.png");
+    width: 60px;
+    height: 60px;
+    transform: translateX(-86px);
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      transform: translate(0, -94px);
+    }
+  }
+
+  &--food::before {
+    content: " ";
+    position: absolute;
+    background-image: url("../../img/mobile/icon-eat.png");
+    width: 60px;
+    height: 60px;
+    transform: translateX(-86px);
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      transform: translate(0, -94px);
+    }
+  }
+
+  &--time::before {
+    content: " ";
+    position: absolute;
+    background-image: url("../../img/mobile/icon-alarm.png");
+    width: 60px;
+    height: 60px;
+    transform: translateX(-86px);
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      transform: translate(0, -94px);
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 249px;
     padding-top: 150px;
     padding-bottom: 26px;
   }
@@ -62,9 +162,11 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  width: 101%;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-top: 12px;
   }
 }

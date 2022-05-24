@@ -45,13 +45,73 @@
   line-height: 37px;
   text-transform: uppercase;
   color: #000000;
-  text-align: center;
+  margin-left: 65px;
+  position: relative;
 
+  &--image-slim::before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    background-image: url("../../img/mobile/cat-back-slim.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-65px);
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/tablet/cat-back-tablet-slim.png");
+      width: 211px;
+      height: 200px;
+      top: 36px;
+      transform: translateX(190%);
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/desktop/cat-back-desktop-slim.png");
+      width: 106px;
+      height: 100px;
+      top: -40px;
+      transform: translateX(0);
+    }
+  }
+
+  &--image-pro::before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    background-image: url("../img/mobile/cat-back-pro.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-75px) translateY(5px);
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/tablet/cat-back-tablet-pro.png");
+      width: 268px;
+      height: 200px;
+      top: 36px;
+      transform: translateX(135%);
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/desktop/cat-back-desktop-pro.png");
+      background-repeat: no-repeat;
+      width: 134px;
+      height: 100px;
+      top: -30px;
+      transform: translateX(0);
+      left: -21px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 52px;
+    margin-left: 23px;
     text-align: start;
   }
 
@@ -71,7 +131,7 @@
   padding-bottom: 23px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 52px;
+    margin-left: 23px;
     padding-top: 24px;
     font-size: 16px;
     line-height: 24px;
@@ -102,6 +162,6 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 52px;
+    margin-left: 23px;
   }
 }

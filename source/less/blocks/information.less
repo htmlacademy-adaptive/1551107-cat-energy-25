@@ -11,21 +11,72 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  margin-bottom: 35px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 99px;
+    height: 2px;
+    background-color: #68b738;
+    top: 31%;
+    transform: translateX(20%);
+    right: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 145px;
+      height: 2px;
+      top: 22px;
+      transform: translateX(100%);
+      right: -35px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 778px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: #68b738;
+      top: 22px;
+      left: -70px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 76px;
+
+    &::before {
+      width: 70px;
+      top: 22px;
+      left: -108px;
+    }
   }
 }
 
 .information__list {
   padding: 0;
   margin: 0;
+  margin-bottom: 23px;
 
   @media (min-width: @desktop-width) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
   }
 }
 
@@ -42,6 +93,39 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
+}
+
+.information__email::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/desktop/icon-email.png");
+  width: 20px;
+  height: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 88%;
+
+  @media (min-width: @tablet-width) {
+    left: 94%;
+  }
+}
+
+.information__phone::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/desktop/icon-phone.png");
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 89%;
+
+  @media (min-width: @tablet-width) {
+    left: 94%;
+  }
 }
 
 .information__type {
