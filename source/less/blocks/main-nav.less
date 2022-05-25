@@ -88,11 +88,11 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .main-nav--closed .main-wrapper__item {
+  .main-nav--closed .main-nav__container {
     display: none;
   }
 
-  .main-nav--opened .main-wrapper {
+  .main-nav--opened .main-nav__main-wrapper {
     position: absolute;
     width: 321px;
     z-index: 10;
@@ -102,16 +102,7 @@
     left: 50%;
   }
 
-  .main-nav--nojs .main__wrapper {
-    position: static;
-    min-height: 0;
-  }
-
-  .main-nav--nojs .main-wrapper__item {
-    display: block;
-  }
-
-  .main-nav--nojs .user-list__item {
+  .main-nav--nojs .main-nav__container {
     display: block;
   }
 }

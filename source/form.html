@@ -12,7 +12,7 @@
 <body class="page__body">
   <header class="page-header-inner">
     <div class="page-header-inner__nav-wrapper">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
             <img class="main-nav__logo-image" src="./img/mobile/logo-header1.svg" alt="cat-energy">
@@ -23,13 +23,13 @@
         </div>
         <div class="main-wrapper">
           <ul class="main-wrapper__list">
-            <li class="main-wrapper__item">
+            <li class="main-wrapper__item main-nav__container">
               <a class="main-wrapper__link-inner" href="./index.html">главная</a>
             </li>
-            <li class="main-wrapper__item">
+            <li class="main-wrapper__item main-nav__container">
               <a class="main-wrapper__link-inner" href="./catalog.html">каталог продукции</a>
             </li>
-            <li class="main-wrapper__item">
+            <li class="main-wrapper__item main-nav__container">
               <a class="main-wrapper__link-inner main-wrapper__link-inner--current" href="./form.html">подбор программы</a>
             </li>
           </ul>
@@ -74,20 +74,23 @@
             <ul class="objective__list">
               <li class="objective__item">
                 <p class="objective__slim">
-                  <input class="objective__slim-input" type="radio" id="slim" name="type-objective" checked>
+                  <input class="objective__slim-input visually-hidden" type="radio" id="slim" name="type-objective" checked>
                   <label class="objective__slim-text" for="slim">похудение</label>
+                  <span class="objective__slim-mark"></span>
                 </p>
               </li>
               <li class="objective__item">
                 <p class="objective__slim">
-                  <input class="objective__slim-input" type="radio" id="mass" name="type-objective">
+                  <input class="objective__slim-input visually-hidden" type="radio" id="mass" name="type-objective">
                   <label class="objective__slim-text" for="mass">Набор массы</label>
+                  <span class="objective__slim-mark"></span>
                 </p>
               </li>
               <li class="objective__item">
                 <p class="objective__slim">
-                  <input class="objective__slim-input" type="radio" id="advice" name="type-objective">
+                  <input class="objective__slim-input visually-hidden" type="radio" id="advice" name="type-objective">
                   <label class="objective__slim-text" for="advice">Не знаю (Нужен ваш совет)</label>
+                  <span class="objective__slim-mark"></span>
                 </p>
               </li>
             </ul>
@@ -122,28 +125,32 @@
           <legend class="optionally__title">Дополнительно</legend>
           <ul class="optionally__list">
             <li class="optionally__item">
-              <p class="optionally__unit">
-                <input class="optionally__input" type="checkbox" id="sweet" checked>
-                <label class="optionally__title-label" for="sweet">сахарозаменитель</label>
-              </p>
+              <label class="optionally__unit">
+                <input class="optionally__input visually-hidden" type="checkbox" id="sugar" checked>
+                <p class="optionally__title-label">сахарозаменитель</p>
+                <span class="optionally__unit-mark"></span>
+              </label>
             </li>
             <li class="optionally__item">
-              <p class="optionally__unit">
-                <input class="optionally__input" type="checkbox" id="water">
-                <label class="optionally__title-label" for="water">питьевая вода</label>
-              </p>
+                <label class="optionally__unit">
+                  <input class="optionally__input visually-hidden" type="checkbox" id="water">
+                  <p class="optionally__title-label">питьевая вода</p>
+                  <span class="optionally__unit-mark"></span>
+                </label>
             </li>
             <li class="optionally__item">
-              <p class="optionally__unit">
-                <input class="optionally__input" type="checkbox" id="milk">
-                <label class="optionally__title-label" for="milk">молоко</label>
-              </p>
+              <label class="optionally__unit">
+                <input class="optionally__input visually-hidden" type="checkbox" id="milk">
+                <p class="optionally__title-label">молоко</p>
+                <span class="optionally__unit-mark"></span>
+              </label>
             </li>
             <li class="optionally__item">
-              <p class="optionally__unit">
-                <input class="optionally__input" type="checkbox" id="vitamin">
-                <label class="optionally__title-label" for="vitamin">витамины</label>
-              </p>
+              <label class="optionally__unit">
+                <input class="optionally__input visually-hidden" type="checkbox" id="vitamin">
+                <p class="optionally__title-label">витамины</p>
+                <span class="optionally__unit-mark"></span>
+              </label>
             </li>
           </ul>
           <div class="optionally__wrapper">

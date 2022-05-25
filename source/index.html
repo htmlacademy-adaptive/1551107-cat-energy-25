@@ -12,7 +12,7 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__nav-wrapper">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
             <img class="main-nav__logo-image" src="./img/mobile/logo-header1.svg" alt="cat-energy">
@@ -21,15 +21,15 @@
             <span class="visually-hidden">открыть меню</span>
           </button>
         </div>
-        <div class="main-wrapper">
+        <div class="main-wrapper main-nav__main-wrapper">
           <ul class="main-wrapper__list">
-            <li class="main-wrapper__item">
+            <li class="main-nav__container main-wrapper__item">
               <a class="main-wrapper__link main-wrapper__link--current" href="./index.html">главная</a>
             </li>
-            <li class="main-wrapper__item">
+            <li class="main-nav__container main-wrapper__item">
               <a class="main-wrapper__link" href="./catalog.html">каталог продукции</a>
             </li>
-            <li class="main-wrapper__item">
+            <li class="main-nav__container main-wrapper__item">
               <a class="main-wrapper__link" href="./form.html">подбор программы</a>
             </li>
           </ul>
@@ -58,11 +58,14 @@
             поможет вашему питомцу сбросить лишний вес.
           </p>
           <div class="weight__type-container">
-            <a class="weight__type" href="#">каталог slim</a>
-            <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
-            </svg>
+            <a class="weight__type" href="#">
+              <span class="weight__type-wrapper">каталог slim</span>
+              <svg class="weight__type-image" width="24" height="12" viewBox="0 0 24 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+              </svg>
+            </a>
           </div>
         </div>
         <div class="weight__wrapper">
@@ -72,10 +75,13 @@
             необходимые мышцы!
           </p>
           <div class="weight__type-container">
-            <a class="weight__type" href="#">каталог pro</a>
-            <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+            <a class="weight__type" href="#">
+              <span class="weight__type-wrapper">каталог pro</span>
+              <svg class="weight__type-image" width="24" height="12" viewBox="0 0 24 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+            </a>
             </svg>
           </div>
         </div>
@@ -149,10 +155,10 @@
             Конюшенная, д. 19/8
             Санкт-Петербург</p>
         </div>
+
         <iframe class="address__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1751.9874010813674!2d30.321061269018625!3d59.93872347961793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1653285761567!5m2!1sru!2sru"
-           style="border: 0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
