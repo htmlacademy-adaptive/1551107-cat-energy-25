@@ -26,6 +26,7 @@
     margin-left: 36px;
     margin-right: 0;
     border-top: none;
+    padding-bottom: 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,13 +44,26 @@
   color: #000000;
   text-decoration: none;
   display: block;
-  padding: 22px 0 23px;
+  padding: 22px 0 8px;
 
 
   @media (min-width: @tablet-width) {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+
+    &--current {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 2px solid #ffffff;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -68,13 +82,26 @@
   color: #000000;
   text-decoration: none;
   display: block;
-  padding: 22px 0 23px;
+  padding: 22px 0 8px;
 
 
   @media (min-width: @tablet-width) {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+
+    &--current {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 2px solid #68b738;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {

@@ -45,17 +45,50 @@
 
 .objective__slim {
   margin: 0;
+  position: relative;
+  display: block;
+  padding-left: 48px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
   }
 }
 
+.objective__slim-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
 .objective__slim-input {
+  &:disabled ~ .objective__slim-text {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .objective__slim-mark {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     margin-right: 20px;
   }
 }
+
+.objective__slim-input[type="radio"]:checked ~ .objective__slim-mark::before {
+  content: "";
+  position: absolute;
+  width: 13.5px;
+  height: 13.5px;
+  background-color: #68b738;
+  border-radius: 50%;
+  top: 28%;
+  right: 28%;
+}
+
 
 .objective__slim-text {
   font-family: "Oswald", sans-serif;
@@ -74,7 +107,7 @@
 
 .objective__item {
   list-style-type: none;
-  padding-bottom: 13px;
+  padding-bottom: 19px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 18px;

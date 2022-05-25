@@ -23,27 +23,7 @@
 
 .optionally__item {
   list-style-type: none;
-}
-
-.optionally__title-label {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #000000;
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.optionally__input {
-  @media (min-width: @tablet-width) {
-    margin-right: 26px;
-  }
+  padding-bottom: 20px;
 }
 
 .optionally__title {
@@ -158,3 +138,67 @@
     justify-content: flex-start;
   }
 }
+
+.optionally__unit {
+  margin: 0;
+  position: relative;
+  display: block;
+  padding-left: 44px;
+}
+
+.optionally__title-label {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.optionally__input {
+  &:disabled ~ .optionally__unit-mark {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .optionally__title-label {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 26px;
+  }
+}
+
+.optionally__unit-mark {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+  }
+}
+
+.optionally__input[type="checkbox"]:checked ~ .optionally__unit-mark::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/mobile/tick-checkbox-mobile.svg");
+  background-repeat: no-repeat;
+  left: 16.35%;
+  right: 14.42%;
+  top: 23.44%;
+  bottom: 22.72%;
+}
+
